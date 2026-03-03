@@ -8,16 +8,14 @@ Phase 1 : Enviroment Provisioning
 4. Integrating Defender XDr and Sentinel
 a. Navigate to content hub>DefenderXDr connector and install.
 <img width="1913" height="849" alt="image" src="https://github.com/user-attachments/assets/76927fce-4737-4412-9494-dfb9c8ec8b8a" />
-b. Navigate to Defender and connected a workspace.
-<img width="687" height="393" alt="image" src="https://github.com/user-attachments/assets/bbacd9ac-d5e7-4edb-ba39-ee1d0c2608f7" />
-c. Validation: Confirmed the connector status is "Connected," ensuring a bi-directional sync of alerts and incidents.
+b. Validation: Confirmed the connector status is "Connected," ensuring a bi-directional sync of alerts and incidents.
 <img width="1868" height="543" alt="image" src="https://github.com/user-attachments/assets/80f212c7-4c65-4aa2-bd4c-6519eb1d603d" />
-d. Note:Since the GA account doesn't have aaccess to the resources created by the root folder. We gave the GA access to all azure resource.
+c. Note:Since the GA account doesn't have aaccess to the resources created by the root folder. We gave the GA access to all azure resource.
 <img width="881" height="160" alt="image" src="https://github.com/user-attachments/assets/957c3e9c-4779-4794-9119-d9220fc60896" />
-e. Connected the workspace and integrated sentinel and XDR.
+d. Connected the workspace and integrated sentinel and XDR.
 <img width="1466" height="361" alt="image" src="https://github.com/user-attachments/assets/ddc6d6e1-c681-4fbd-9c76-39031012f860" />
 <img width="1171" height="331" alt="image" src="https://github.com/user-attachments/assets/d9c5b057-99b9-45ef-b7a3-647ae5d582ee" />
-Unified Experience: Verified that the Sentinel Blade is now active within the Microsoft Defender portal. This allows for seamless security operations, including Hunting, Workbooks, and Incidents, without switching between portals.
+e.Unified Experience: Verified that the Sentinel Blade is now active within the Microsoft Defender portal. This allows for seamless security operations, including Hunting, Workbooks, and Incidents, without switching between portals.
 <img width="1849" height="676" alt="image" src="https://github.com/user-attachments/assets/8918e3c3-5300-47ca-9dd1-239be0da953e" />
 
 
