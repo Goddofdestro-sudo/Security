@@ -6,6 +6,8 @@ Phase 1 : Enviroment Provisioning
 3. Enabling sentinel on the LAW to begin security capabilities.
    <img width="442" height="634" alt="image" src="https://github.com/user-attachments/assets/973e82d5-7528-4ef0-bb16-8ac1f8912f4c" /> 
 4. Integrating Defender XDr and Sentinel
+Navigate to content hub>DefenderXDr connector and install.
+<img width="1913" height="849" alt="image" src="https://github.com/user-attachments/assets/76927fce-4737-4412-9494-dfb9c8ec8b8a" />
 Validation: Confirmed the connector status is "Connected," ensuring a bi-directional sync of alerts and incidents.
 <img width="1868" height="543" alt="image" src="https://github.com/user-attachments/assets/80f212c7-4c65-4aa2-bd4c-6519eb1d603d" />
 Unified Experience: Verified that the Sentinel Blade is now active within the Microsoft Defender portal. This allows for seamless security operations, including Hunting, Workbooks, and Incidents, without switching between portals.
