@@ -27,8 +27,26 @@ Azure agent needs to be installed on the VM for it to start transfering the logs
 <img width="649" height="280" alt="image" src="https://github.com/user-attachments/assets/b1984bdf-fea8-4478-9172-961ada2eb03a" />
 <img width="1457" height="98" alt="image" src="https://github.com/user-attachments/assets/b468e368-c5cd-44d1-9b5e-15f414fc06fb" />
 
-Under Windows security event, select the Windows security Events via AMA connector as this is the modern and current connector used to ingest logs.
-Now, create a data collection rule. Logs can refined and only needed can be selected.
+**To ensure your lab environment aligns with current security engineering standards, we will use the Windows Security Events via AMA connector. This represents the modern, Azure Monitor Agent (AMA)-based approach to log ingestion.
+
+1. Enable the Connector
+In the Microsoft Sentinel portal, navigate to Data Connectors and enable the Windows Security Events via AMA connector. This provides the backend necessary to receive, process, and store your Windows security data in a centralized Log Analytics Workspace.
+
+3. Define Data Collection Rules (DCR)
+Once the connector is enabled, you must create a Data Collection Rule (DCR) to filter incoming logs. Rather than ingesting the entire event stream, we will configure a Custom filter to minimize costs and reduce "noise."
+
+Configure the DCR: Navigate to the Azure Monitor portal and create a new DCR.
+
+Specify XPath Filtering: Under the "Collect" tab, select Custom and apply the following XPath expression to capture only successful logon events (Event ID 4624):
+
+Security!*[System[(EventID=4624)]]
+
+Association: Ensure the DCR is linked to your target machine via the Resources tab to initiate the log streaming process.**
 
 <img width="599" height="831" alt="image" src="https://github.com/user-attachments/assets/39bf5a5a-417a-42c1-ab2c-b5baeb4df346" />
+
+**Validate logs ingestion via KQL**
+
+<img width="1118" height="715" alt="image" src="https://github.com/user-attachments/assets/ea022732-bbaf-4926-b1cd-b0f81db96c8a" />
+
 
