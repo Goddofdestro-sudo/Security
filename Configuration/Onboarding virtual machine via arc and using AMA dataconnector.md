@@ -27,3 +27,8 @@ Azure agent needs to be installed on the VM for it to start transfering the logs
 <img width="649" height="280" alt="image" src="https://github.com/user-attachments/assets/b1984bdf-fea8-4478-9172-961ada2eb03a" />
 <img width="1457" height="98" alt="image" src="https://github.com/user-attachments/assets/b468e368-c5cd-44d1-9b5e-15f414fc06fb" />
 
+Under Windows security event, select the Windows security Events via AMA connector as this is the modern and current connector used to ingest logs.
+Now, create a data collection rule. Logs can refined and only needed can be selected.
+
+<img width="599" height="831" alt="image" src="https://github.com/user-attachments/assets/39bf5a5a-417a-42c1-ab2c-b5baeb4df346" />
+
