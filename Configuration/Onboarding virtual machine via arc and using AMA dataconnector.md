@@ -47,6 +47,10 @@ Association: Ensure the DCR is linked to your target machine via the Resources t
 
 **Validate logs ingestion via KQL**
 
+SecurityEvent
+|where EventID == 4624
+|sort by TimeGenerated asc
+
 <img width="1118" height="715" alt="image" src="https://github.com/user-attachments/assets/ea022732-bbaf-4926-b1cd-b0f81db96c8a" />
 
 
