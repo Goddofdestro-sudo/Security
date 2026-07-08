@@ -1,22 +1,22 @@
 **Objective**
 Design and implement Microsoft Intune Application Protection Policies (MAM) to secure corporate data on mobile devices without requiring full device enrollment. The solution was designed to separate business and personal data, reduce the risk of data leakage, and maintain a positive end-user experience across both personally owned and corporate-managed iOS devices.
 
-Prerequisites
-Before implementing the solution, the following activities were completed:
+**Prerequisites
+Before implementing the solution, the following activities were completed:**
 
-Identified all managed applications deployed within the environment.
-Reviewed application compatibility with Intune Application Protection Policies.
-Confirmed supported Microsoft applications that would be included within the MAM scope.
-Focused on Microsoft applications deployed across both personal and corporate-owned iOS devices.
-Validated user groups and assignment targets for policy deployment.
+-Identified all managed applications deployed within the environment.
+-Reviewed application compatibility with Intune Application Protection Policies.
+-Confirmed supported Microsoft applications that would be included within the MAM scope.
+-Focused on Microsoft applications deployed across both personal and corporate-owned iOS devices.
+-Validated user groups and assignment targets for policy deployment.
 
 
-Configuration Tasks
-1. Application Configuration Policies
+**Configuration Tasks**
+**1. Application Configuration Policies**
 Application Configuration Policies were created and assigned to all managed Microsoft applications that would be protected by the Application Protection Policies.
 Purpose
 
-Standardize application settings.
+**Standardize application settings.**
 Ensure consistent user experience across managed applications.
 Enable required application functionality before MAM enforcement.
 
